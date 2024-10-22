@@ -25,6 +25,7 @@ const PostList = () => {
                 <div key={post.id}>
                     <h2>{post.title}</h2>
                     <p>{post.body}</p>
+                    <Link to={`/edit/${post.id}`}>Edit</Link>
                     <button onClick={() => handleDelete(post.id)}>Delete</button>
                 </div>
             ))}
